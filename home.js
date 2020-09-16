@@ -1,6 +1,6 @@
 
 function onload() {
-    setTimeout("loadscr()", "1000");
+    setTimeout("loadscr()", "500");
 }
 
 function loadscr() {
