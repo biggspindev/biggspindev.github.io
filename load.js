@@ -1,5 +1,5 @@
 
 function onload() {
     console.log("Loading...")
-    window.location.pathname = '/new';
+    window.location.pathname = '/home';
 }
