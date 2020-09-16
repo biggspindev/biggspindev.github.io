@@ -1,5 +1,5 @@
 
 function onload() {
-    console.log("Loading...")
+    console.log("Sending user to home page")
     window.location.pathname = '/home';
 }
