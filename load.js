@@ -2,7 +2,7 @@ function onload() {
   var curdir = "min"
   var fadeTarget = document.getElementById("loadtext");
   fadeTarget.style.opacity = 1;
-  setInterval(fade, 80);
+  setInterval(fade, 65);
   function fade() {
     if (curdir == "min") {
       fadeTarget.style.opacity -= 0.05;
