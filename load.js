@@ -4,8 +4,6 @@ function onload() {
   fadeTarget.style.opacity = 1;
   setInterval(fade, 80);
   function fade() {
-    console.log(fadeTarget.style.opacity)
-    console.log(curdir)
     if (curdir == "min") {
       fadeTarget.style.opacity -= 0.05;
       if (fadeTarget.style.opacity == 0.2) {
@@ -17,8 +15,6 @@ function onload() {
         curdir = "min";
       }
     }
-    console.log(fadeTarget.style.opacity)
-    console.log(curdir)
   //clearInterval(fadoutloadscreen);
   } 
 }
