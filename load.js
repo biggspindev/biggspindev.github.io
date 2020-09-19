@@ -1,8 +1,9 @@
 function onload() {
-  var curdir = "min"
+  var curdir = "min";
+  var loopnr = 0;
   var fadeTarget = document.getElementById("loadtext");
   fadeTarget.style.opacity = 1;
-  setInterval(fade, 65);
+  var loadfadeinterv = setInterval(fade, 65);
   function fade() {
     if (curdir == "min") {
       fadeTarget.style.opacity -= 0.05;
@@ -15,6 +16,11 @@ function onload() {
         curdir = "min";
       }
     }
-  //clearInterval(fadoutloadscreen);
+	loopnr += 1;
+	if (fadeTarget.style.opacity == 1 && loopnr > 48) {
+	clearInterval(loadfadeinterv);
+	fadeTarget.remove();
+	document.getElementById("loadbg").remove();
+	}
   } 
 }
