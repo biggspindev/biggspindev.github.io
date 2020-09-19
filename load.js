@@ -1,9 +1,24 @@
-
 function onload() {
-    console.log("Sending user to home page");
-    setTimeout("redirect()", "500")
-}
-
-function redirect() {
-    window.location.pathname = '/home';
+  var curdir = "min"
+  var fadeTarget = document.getElementById("loadtext");
+  fadeTarget.style.opacity = 1;
+  setInterval(fade, 50);
+  function fade() {
+    console.log(fadeTarget.style.opacity)
+    console.log(curdir)
+    if (curdir == "min") {
+      fadeTarget.style.opacity -= 0.05;
+      if (fadeTarget.style.opacity == 0.2) {
+        curdir = "plus";
+      }
+    } else if (curdir == "plus") {
+      fadeTarget.style.opacity = Number(fadeTarget.style.opacity) + 0.05;
+      if (fadeTarget.style.opacity == 1) {
+        curdir = "min";
+      }
+    }
+    console.log(fadeTarget.style.opacity)
+    console.log(curdir)
+  //clearInterval(fadoutloadscreen);
+  } 
 }
