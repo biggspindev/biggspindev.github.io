@@ -100,8 +100,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      top: 307px;
       height: 1000px;
+      top: 304px;
     }
     .gwd-p-a8v5 {
       background-image: none;
@@ -135,14 +135,14 @@
       border-image-outset: 0;
       border-image-repeat: stretch;
       border-color: rgb(255, 255, 255);
-      width: 500px;
       left: 0px;
       top: 0px;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 10px;
-      height: 60px;
+      height: 70px;
+      width: 400px;
     }
     .gwd-div-wli3 {
       position: absolute;
@@ -152,54 +152,60 @@
       justify-content: center;
       align-items: center;
       top: 175px;
-      height: 60px;
+      height: 70px;
     }
     .gwd-button-csa7 {
-      width: 150px;
       font-size: 15px;
       border-width: 0px;
       border-style: none;
       background-image: none;
       background-color: rgb(255, 255, 255);
       height: 35px;
-      border-radius: 8px;
-      margin: 10px;
-      left: 708px;
       top: 173px;
+      left: 0px;
+      padding-right: 25px;
+      padding-left: 25px;
+      margin: 10px;
+      border-radius: 8px;
     }
-    .gwd-button-1i6e {
-      left: 861px;
-    }
-    .gwd-button-najh {
-      left: 290px;
-      top: -10px;
-      margin: 6px;
-    }
-    .gwd-button-1s90 {
-      left: 140px;
-      top: -10px;
-      margin: 6px;
+    .gwd-button-csa8 {
+      font-size: 15px;
+      border-width: 0px;
+      border-style: none;
+      background-image: none;
+      background-color: rgb(255, 255, 255);
+      height: 35px;
+      top: 173px;
+      left: 0px;
+      padding-right: 25px;
+      padding-left: 25px;
+      margin: 2px;
+      border-radius: 8px;
     }
     .gwd-div-1a51 {
       position: absolute;
       height: 35px;
       width: 100%;
-      top: 190px;
       left: 0px;
       display: flex;
       justify-content: center;
       align-items: center;
+      top: 190px;
     }
-    .gwd-button-gjls {
-      left: -10px;
-      top: -10px;
-      margin: 6px;
+    .gwd-div-74ds {
+      left: 0px;
+      top: 327px;
+    }
+    .gwd-div-nedo {
+      top: 195px;
+      left: 0px;
     }
   </style>
   <script type="text/javascript" src="buttonhandler.js"></script>
+  <script type="text/javascript" src="buttontexthandler.js"></script>
 </head>
 
-<body class="htmlNoPages">
+<body class="htmlNoPages" onload="onload()">
   <p class="gwd-p-1a00"><span class="gwd-span-1ffo"><span class="gwd-span-71f8">BiggSpin</span> Dev<br>
     
     <span class="gwd-span-19ld">Please pick a page to navigate to.</span><br>
@@ -219,10 +225,14 @@
   <div class="gwd-div-1y05">
     <p class="gwd-p-11id">Projects</p>
   </div>
-  <div class="gwd-div-1a51">
-    <button id="button_1" class="gwd-button-csa7 gwd-button-gjls" onclick="navto('/aboutus')">About Us</button>
-    <button id="button_2" class="gwd-button-csa7 gwd-button-1i6e gwd-button-1s90" onclick="navto('/theteam')">The Team</button>
-    <button id="button_3" class="gwd-button-csa7 gwd-button-1i6e gwd-button-najh" onclick="navto('/contact')">Contact</button>
+  <div class="gwd-div-1a51 gwd-div-nedo">
+    <button id="button_1" class="gwd-button-csa7" onclick="navto('/aboutus')">About Us</button>
+    <button id="button_2" class="gwd-button-csa7" onclick="navto('/theteam')">The Team</button>
+    <button id="button_3" class="gwd-button-csa7" onclick="navto('/contact')">Contact</button>
+  </div>
+  <div class="gwd-div-1a51 gwd-div-74ds" id="gamediv0">
+    <button id="div0button1" class="gwd-button-csa8" onclick="navto('/fourofour')">The platform should be here, but it isn't?</button>
+    <button id="div0button2" class="gwd-button-csa8" onclick="navto('/fourofour')">If you see this, something isn't right.</button>
   </div>
 </body>
 
