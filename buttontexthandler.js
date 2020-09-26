@@ -1,14 +1,20 @@
 function onload() {
-  var games = ["Testgame1", "Testgame2", "Testgame3", "Testgame4", "Testgame5", "Testgame6"]; 
-  var destinsgames = ["/a", "/a", "/a", "/a", "/a", "/a"];
-  var platforms = ["Testplatform1", "Testplatform2", "Testplatform3", "Testplatform4", "Testplatform5", "Testplatform6"]; 
-  var destins = ["/a", "/a", "/a", "/a", "/a", "/a"];
+  var games = ["Disaster Lab", "NKSX", "BiggSpinMC V2", "BiggSpin Minigames"]; 
+  var destinsgames = ["/game4", "/game3", "/game2", "/game1"];
+  var platforms = ["Roblox", "TI-84 CE", "Minecraft", "Minecraft"]; 
+  var destins = ["/rbx", "/ti", "/mc", "/mc"];
   var divZero = document.getElementById("gamediv0");
   document.getElementById("div0button1").innerHTML = platforms[0];
   document.getElementById("div0button2").innerHTML = games[0];
+  var newHeightContainer = (35 * games.length) + (15 * (games.length - 1)) + 38;
+  document.getElementById("pcontainerdiv").style.height = newHeightContainer.toString() + "px";
+  document.getElementById("pcontainersvg").style.height = newHeightContainer.toString() + "px";
+  var totalWidthFinal = 0;
+  var totalWidthFinalId = 0;
   if (games !== null) {
     var curGameId;
     for (curGameId = 1; curGameId < games.length; curGameId++) {
+      var totalWidth = 0;
       let newDiv = document.createElement('div');
       document.body.append(newDiv);
       var newDivId = "gamediv" + curGameId.toString();
@@ -22,9 +28,10 @@ function onload() {
       var newPButText = platforms[curGameId];
       var newPlatformButton = "<button id=\"" + newPButId + "\" class=\"gwd-button-csa8\" onclick=\"navto(\'" + newPButNav + "\')\">" + newPButText + "</button>";
       let newPDiv = document.createElement('div');
-      var appender = document.getElementById(newDivId)
+      var appender = document.getElementById(newDivId);
       appender.appendChild(newPDiv);
       newPDiv.outerHTML = newPlatformButton;
+      totalWidth += platforms[curGameId].length;
       //breaker for readability
       var newGButId = "div" + curGameId.toString() + "button2";
       var newGButNav = destinsgames[curGameId];
@@ -33,6 +40,18 @@ function onload() {
       let newGDiv = document.createElement('div');
       appender.appendChild(newGDiv);
       newGDiv.outerHTML = newGameButton;
+      totalWidth += games[curGameId].length;
+      if (totalWidth > totalWidthFinal) {
+        totalWidthFinal = totalWidth;
+        totalWidthFinalId = curGameId;
+      }
     }
   }
+  var idToGetScale1 = "div" + totalWidthFinalId.toString() + "button1";
+  var idToGetScale2 = "div" + totalWidthFinalId.toString() + "button2";
+  var width1 = document.getElementById(idToGetScale1).offsetWidth;
+  var width2 = document.getElementById(idToGetScale2).offsetWidth;
+  var widthTotal = width1 + width2;
+  widthTotal += 18 * 2;
+  document.getElementById("pcontainersvg").style.width = widthTotal.toString() + "px";
 }
