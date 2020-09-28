@@ -1,6 +1,6 @@
-function onload() {
+	function onload() {
   var games = ["Disaster Lab", "NKSX", "BiggSpinMC V2", "BiggSpin Minigames"]; 
-  var destinsgames = ["/game4", "/game3", "/game2", "/game1"];
+  var destinsgames = ["/bsgame", "/bsgame", "/bsgame", "/bsgame"];
   var platforms = ["Roblox", "TI-84 CE", "Minecraft", "Minecraft"]; 
   var destins = ["/rbx", "/ti", "/mc", "/mc"];
   var divZero = document.getElementById("gamediv0");
