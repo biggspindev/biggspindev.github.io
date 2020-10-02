@@ -1,8 +1,8 @@
-	function onload() {
+function onload() {
   var games = ["Disaster Lab", "NKSX", "BiggSpinMC V2", "BiggSpin Minigames"]; 
-  var destinsgames = ["/bsgame", "/bsgame", "/bsgame", "/bsgame"];
+  var destinsgames = ["/game", "/game", "/game", "/game"];
   var platforms = ["Roblox", "TI-84 CE", "Minecraft", "Minecraft"]; 
-  var destins = ["/rbx", "/ti", "/mc", "/mc"];
+  var destins = ["/platform", "/platform", "/platform", "/platform"];
   var divZero = document.getElementById("gamediv0");
   document.getElementById("div0button1").innerHTML = platforms[0];
   document.getElementById("div0button2").innerHTML = games[0];
@@ -26,7 +26,7 @@
       var newPButId = "div" + curGameId.toString() + "button1";
       var newPButNav = destins[curGameId];
       var newPButText = platforms[curGameId];
-      var newPlatformButton = "<button id=\"" + newPButId + "\" class=\"gwd-button-csa8\" onclick=\"navto(\'" + newPButNav + "\')\">" + newPButText + "</button>";
+      var newPlatformButton = "<button id=\"" + newPButId + "\" class=\"gwd-button-csa8\" onclick=\"navtoplatform(\'" + newPButNav + "\', " + curGameId + ")\">" + newPButText + "</button>";
       let newPDiv = document.createElement('div');
       var appender = document.getElementById(newDivId);
       appender.appendChild(newPDiv);
@@ -36,7 +36,7 @@
       var newGButId = "div" + curGameId.toString() + "button2";
       var newGButNav = destinsgames[curGameId];
       var newGButText = games[curGameId];
-      var newGameButton = "<button id=\"" + newGButId + "\" class=\"gwd-button-csa8\" onclick=\"navto(\'" + newGButNav + "\')\">" + newGButText + "</button>";
+      var newGameButton = "<button id=\"" + newGButId + "\" class=\"gwd-button-csa8\" onclick=\"navtogame(\'" + newGButNav + "\', " + curGameId + ")\">" + newGButText + "</button>";
       let newGDiv = document.createElement('div');
       appender.appendChild(newGDiv);
       newGDiv.outerHTML = newGameButton;
