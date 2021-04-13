@@ -1,3 +1,17 @@
+var ViewFrame = null;
+var isdone = false;
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  ViewFrame = document.getElementById('gwd-iframe_1');
+  
+  ViewFrame.addEventListener("load", function() {
+    console.log("Bruh");
+    isdone = true;
+  });
+
+})
+
+
 function onload() {
   var curdir = "min";
   var loopnr = 0;
@@ -17,10 +31,12 @@ function onload() {
       }
     }
 	loopnr += 1;
-	if (fadeTarget.style.opacity == 1 && loopnr > 48) {
+	if (loopnr >= 15 && isdone) {
 	clearInterval(loadfadeinterv);
-	fadeTarget.remove();
-	document.getElementById("loadbg").remove();
+	fadeTarget.style.visibility = "hidden";
+  document.getElementById("loadbg").style.visibility = "hidden";
+  //fadeTarget.remove();
+	//document.getElementById("loadbg").remove();
 	}
   } 
 }
