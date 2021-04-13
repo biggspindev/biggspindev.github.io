@@ -1,5 +1,5 @@
 ### About
-Website for games and stuff
+Website for games and stuff<br />
 ![Status](https://img.shields.io/website?down_color=red&down_message=offline&style=flat-square&up_color=green&up_message=online&url=https%3A%2F%2Fbiggspindev.github.io%2F)
 ### License & Credits
 Created by Artzert<br />
