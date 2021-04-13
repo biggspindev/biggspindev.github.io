@@ -1,4 +1,12 @@
+function notifychange() {
+	const message = JSON.stringify({
+	  content: 'LOADTIME'
+	});
+	window.parent.postMessage(message, '*');
+}
+
 function navto(destination) {
+	notifychange()
 	window.location.href = destination;
 }
 function navtogame(destination, gameid) {
@@ -9,6 +17,7 @@ function navtogame(destination, gameid) {
     localStorage.setItem("buttons", ["Button1", "Button2"]);
     localStorage.setItem("buttonsdestin", ["Buttondest1", "Buttondest2"]);
   }
+  notifychange()
   window.location.href = destination;
 }
 function navtoplatform(destination, gameid) {
@@ -19,6 +28,7 @@ function navtoplatform(destination, gameid) {
     localStorage.setItem("buttons", ["Button1", "Button2"]);
     localStorage.setItem("buttonsdestin", ["Buttondest1", "Buttondest2"]);
   }
+  notifychange()
   window.location.href = destination;
 }
 
