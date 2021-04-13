@@ -1,4 +1,4 @@
-![example workflow](https://github.com/biggspindev/biggspindev.github.io/deployments/pages/badge.svg)
+![example workflow](https://github.com/biggspindev/biggspindev.github.io/deployments/badge.svg)
 
 ### License & Credits
 Created by Artzert<br />
