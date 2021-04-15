@@ -1,8 +1,6 @@
 function onload() {
-  var games = ["Disaster Lab", "NKSX", "BiggSpinMC V2", "BiggSpin Minigames"]; 
-  var destinsgames = ["/game", "/game", "/game", "/game"];
-  var platforms = ["Roblox", "TI-84 CE", "Minecraft", "Minecraft"]; 
-  var destins = ["/platform", "/platform", "/platform", "/platform"];
+  var games = ["TBD", "Cave Mining Simulator", "Disaster Lab", "BiggSpinMC"]; 
+  var platforms = ["TBD", "InDev", "On Hold", "On Hold"]; 
   var divZero = document.getElementById("gamediv0");
   document.getElementById("div0button1").innerHTML = platforms[0];
   document.getElementById("div0button2").innerHTML = games[0];
@@ -24,7 +22,7 @@ function onload() {
       newDiv.outerHTML = newDivElement;
       //breaker for readability
       var newPButId = "div" + curGameId.toString() + "button1";
-      var newPButNav = destins[curGameId];
+      var newPButNav = "/game";
       var newPButText = platforms[curGameId];
       var newPlatformButton = "<button id=\"" + newPButId + "\" class=\"gwd-button-csa8\" onclick=\"navtoplatform(\'" + newPButNav + "\', " + curGameId + ")\">" + newPButText + "</button>";
       let newPDiv = document.createElement('div');
@@ -34,7 +32,7 @@ function onload() {
       totalWidth += platforms[curGameId].length;
       //breaker for readability
       var newGButId = "div" + curGameId.toString() + "button2";
-      var newGButNav = destinsgames[curGameId];
+      var newGButNav = "/game";
       var newGButText = games[curGameId];
       var newGameButton = "<button id=\"" + newGButId + "\" class=\"gwd-button-csa8\" onclick=\"navtogame(\'" + newGButNav + "\', " + curGameId + ")\">" + newGButText + "</button>";
       let newGDiv = document.createElement('div');
