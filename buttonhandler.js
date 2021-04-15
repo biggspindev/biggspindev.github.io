@@ -17,16 +17,16 @@ function navtogame(destination, gameid) {
     localStorage.setItem("buttons", ["Button1", "Button2"]);
     localStorage.setItem("buttonsdestin", ["Buttondest1", "Buttondest2"]);
   }
-  notifychange()
+  notifychange();
   window.location.href = destination;
 }
 function navtoplatform(destination, gameid) {
-  localStorage.setItem("title", "Game status meanings");
+  localStorage.setItem("title", "Game status meaning");
   localStorage.setItem("istitleshort", true);
   localStorage.setItem("desc", "Bruh");
   localStorage.setItem("buttons", ["Button1", "Button2"]);
   localStorage.setItem("buttonsdestin", ["Buttondest1", "Buttondest2"]);
-  notifychange()
+  notifychange();
   window.location.href = destination;
 }
 

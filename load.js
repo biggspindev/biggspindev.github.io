@@ -5,15 +5,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	ViewFrame = document.getElementById('gwd-iframe_1');
 	window.addEventListener('message', function(e) {
 		const data = JSON.parse(e.data);
-		
-		console.log("Bruh");
 		if (isdone && data.content == 'LOADTIME') {
 			isdone = false;
 			onload()
 		}
 	});
 	ViewFrame.addEventListener("load", function() {	
-		console.log("Bruh2");
 		if (!isdone) {
 			isdone = true;
 		}
