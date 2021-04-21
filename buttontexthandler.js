@@ -24,7 +24,7 @@ function onload() {
       var newPButId = "div" + curGameId.toString() + "button1";
       var newPButNav = "/item";
       var newPButText = platforms[curGameId];
-      var newPlatformButton = "<button id=\"" + newPButId + "\" class=\"gwd-button-csa8\" onclick=\"navtospecial(\'" + newPButNav + "\', " + curGameId + ")\">" + newPButText + "</button>";
+      var newPlatformButton = "<button id=\"" + newPButId + "\" class=\"gwd-button-csa8\" onclick=\"navtospecial(\'" + newPButNav + "\', " + 0 + ")\">" + newPButText + "</button>";
       let newPDiv = document.createElement('div');
       var appender = document.getElementById(newDivId);
       appender.appendChild(newPDiv);

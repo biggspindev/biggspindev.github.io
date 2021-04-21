@@ -30,7 +30,7 @@ function navtospecial(destination, id) {
   if (id == 0) {
     localStorage.setItem("title", "Project Status Meaning");
     localStorage.setItem("istitleshort", true);
-    localStorage.setItem("desc", "A project has 5 possible states:<br>-TBD: This project's information is yet to be revealed to the public.<br>-Date: If the status is a date, the project will release / be finished at that date.<br>-InDev: The project is currently being worked on, and there is no release date yet.<br>-On Hold: This project isn't cancelled, but the is currently no work done on this project.<br>-Cancelled, this project will forever be unfinished.");
+    localStorage.setItem("desc", "A project has 5 possible states:<br><b>TBD</b>: This project's information is yet to be revealed to the public.<br><b>Date</b>: If the status is a date, the project will release / be finished at that date.<br><b>InDev</b>: The project is currently being worked on, and there is no release date yet.<br><b>On Hold</b>: This project isn't cancelled, but the is currently no work done on this project.<br><b>Cancelled</b>: this project will forever be unfinished.");
     localStorage.setItem("buttons", false);
     localStorage.setItem("buttonsdestin", false);
   } else if (id == 1) {
