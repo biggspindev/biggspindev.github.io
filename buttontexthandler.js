@@ -1,9 +1,9 @@
 function onload() {
   var isTeam = localStorage.getItem("isteam");
-  if (isTeam) {
+  if (isTeam == "true") {
     document.getElementById("button_2").style.backgroundColor = "rgb(216, 212, 207)";
     document.getElementById("button_2").style.color = "rgb(19, 21, 22)";
-    localStorage.setItem("isteam", false);
+    localStorage.setItem("isteam", "false");
     document.getElementById("headerTitle").innerHTML = "The Team";
   } else {
     document.getElementById("button_1").style.backgroundColor = "rgb(216, 212, 207)";
