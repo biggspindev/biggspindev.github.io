@@ -11,7 +11,13 @@ function navto(destination) {
 }
 function navtogame(destination, gameid) {
   if (gameid == 0) {
-    localStorage.setItem("title", "Disaster Lab");
+    localStorage.setItem("title", "TBD");
+    localStorage.setItem("istitleshort", true);
+    localStorage.setItem("desc", "TBD");
+    localStorage.setItem("buttons", false);
+    localStorage.setItem("buttonsdestin", false);
+  } else if (gameid == 1) {
+    localStorage.setItem("title", "Cave Mining Simulator");
     localStorage.setItem("istitleshort", true);
     localStorage.setItem("desc", "Description here lol");
     localStorage.setItem("buttons", ["Button1", "Button2"]);
@@ -24,7 +30,7 @@ function navtospecial(destination, id) {
   if (id == 0) {
     localStorage.setItem("title", "Project Status Meaning");
     localStorage.setItem("istitleshort", true);
-    localStorage.setItem("desc", "A project has 4 possible states:<br>-Date: If the status is a date, the project will release / be finished at that date.<br>-InDev: The project is currently being worked on, and there is no release date yet.<br>-On Hold: This project isn't cancelled, but the is currently no work done on this project.<br>-Cancelled, this project will forever be unfinished.");
+    localStorage.setItem("desc", "A project has 5 possible states:<br>-TBD: This project's information is yet to be revealed to the public.<br>-Date: If the status is a date, the project will release / be finished at that date.<br>-InDev: The project is currently being worked on, and there is no release date yet.<br>-On Hold: This project isn't cancelled, but the is currently no work done on this project.<br>-Cancelled, this project will forever be unfinished.");
     localStorage.setItem("buttons", false);
     localStorage.setItem("buttonsdestin", false);
   } else if (id == 1) {
