@@ -22,9 +22,9 @@ function onload() {
       newDiv.outerHTML = newDivElement;
       //breaker for readability
       var newPButId = "div" + curGameId.toString() + "button1";
-      var newPButNav = "/game";
+      var newPButNav = "/item";
       var newPButText = platforms[curGameId];
-      var newPlatformButton = "<button id=\"" + newPButId + "\" class=\"gwd-button-csa8\" onclick=\"navtoplatform(\'" + newPButNav + "\', " + curGameId + ")\">" + newPButText + "</button>";
+      var newPlatformButton = "<button id=\"" + newPButId + "\" class=\"gwd-button-csa8\" onclick=\"navtospecial(\'" + newPButNav + "\', " + curGameId + ")\">" + newPButText + "</button>";
       let newPDiv = document.createElement('div');
       var appender = document.getElementById(newDivId);
       appender.appendChild(newPDiv);
@@ -32,7 +32,7 @@ function onload() {
       totalWidth += platforms[curGameId].length;
       //breaker for readability
       var newGButId = "div" + curGameId.toString() + "button2";
-      var newGButNav = "/game";
+      var newGButNav = "/item";
       var newGButText = games[curGameId];
       var newGameButton = "<button id=\"" + newGButId + "\" class=\"gwd-button-csa8\" onclick=\"navtogame(\'" + newGButNav + "\', " + curGameId + ")\">" + newGButText + "</button>";
       let newGDiv = document.createElement('div');
