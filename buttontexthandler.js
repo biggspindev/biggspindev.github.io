@@ -1,4 +1,14 @@
 function onload() {
+  var isTeam = localStorage.getItem("isteam");
+  if (isTeam) {
+    document.getElementById("button_2").style.backgroundColor = "rgb(216, 212, 207)";
+    document.getElementById("button_2").style.color = "rgb(19, 21, 22)";
+    localStorage.setItem("isteam", false);
+    document.getElementById("headerTitle").innerHTML = "The Team";
+  } else {
+    document.getElementById("button_1").style.backgroundColor = "rgb(216, 212, 207)";
+    document.getElementById("button_1").style.color = "rgb(19, 21, 22)";
+  }
   var games = ["TBD", "Cave Mining Simulator", "Disaster Lab", "BiggSpinMC"]; 
   var platforms = ["TBD", "InDev", "On Hold", "On Hold"]; 
   var divZero = document.getElementById("gamediv0");
