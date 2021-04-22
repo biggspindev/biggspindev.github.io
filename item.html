@@ -39,6 +39,14 @@
       background-image: none;
       background-color: rgb(0, 0, 0);
     }
+    .noselect {
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    }
     .gwd-p-1a00 {
       left: 0%;
       padding-bottom: 20px;
@@ -159,9 +167,9 @@
 </head>
 
 <body class="htmlNoPages" onload="onload()">
-  <p class="gwd-p-1a00"><span class="gwd-span-1ffo"><span class="gwd-span-71f8">BiggSpin</span> Dev</span>
+  <p class="gwd-p-1a00 noselect"><span class="gwd-span-1ffo"><span class="gwd-span-71f8">BiggSpin</span> Dev</span>
   </p>
-  <div class="gwd-div-f6at gwd-div-2ck3">
+  <div class="gwd-div-f6at gwd-div-2ck3 noselect">
     <p class="gwd-p-a8v5">Actions &amp; External Links</p>
   </div>
   <div class="gwd-div-f6at gwd-div-2ck3 gwd-div-nlik" id="descbox">
@@ -170,7 +178,7 @@
   <div class="gwd-div-f6at gwd-div-1eug">
     <p class="gwd-p-a8v5 gwd-p-qthf" id="title">Project Title Here, This Should Never Be Seen.</p>
   </div>
-  <div class="gwd-div-1a51 gwd-div-nedo">
+  <div class="gwd-div-1a51 gwd-div-nedo noselect">
     <button id="button_3" class="gwd-button-csa7" onclick="navto('/bruh')">If you see this, something went wrong.</button>
   </div>
 </body>

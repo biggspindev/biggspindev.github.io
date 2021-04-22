@@ -39,6 +39,14 @@
       background-image: none;
       background-color: rgb(0, 0, 0);
     }
+    .noselect {
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    }
     .gwd-p-1a00 {
       position: absolute;
       transform-origin: 50% 50% 0px;
@@ -216,7 +224,7 @@
 </head>
 
 <body class="htmlNoPages" onload="onload()">
-  <p class="gwd-p-1a00"><span class="gwd-span-1ffo"><span class="gwd-span-71f8">BiggSpin</span> Dev<br>
+  <p class="gwd-p-1a00 noselect"><span class="gwd-span-1ffo"><span class="gwd-span-71f8">BiggSpin</span> Dev<br>
     
     <span class="gwd-span-19ld">Please pick a page to navigate to.</span><br>
     
@@ -226,13 +234,13 @@
   <div class="gwd-div-wli3">
     <svg data-gwd-shape="rectangle" class="gwd-svg-1czx"></svg>
   </div>
-  <div class="gwd-div-f6at">
+  <div class="gwd-div-f6at noselect">
     <p class="gwd-p-a8v5">Main Pages</p>
   </div>
-  <div id="pcontainerdiv" class="gwd-div-18id">
+  <div id="pcontainerdiv " class="gwd-div-18id">
     <svg id="pcontainersvg" data-gwd-shape="rectangle" class="gwd-svg-5rf5"></svg>
   </div>
-  <div class="gwd-div-1y05">
+  <div class="gwd-div-1y05 noselect">
     <p id="headerTitle" class="gwd-p-11id">Projects</p>
   </div>
   <div class="gwd-div-1a51 gwd-div-nedo">
