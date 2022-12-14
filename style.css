@@ -1,0 +1,28 @@
+body{
+    background-color: #000000;
+}
+
+.scroller {
+    background: url("bg.png") repeat;
+    animation: scrolling 25s linear infinite;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+}
+
+:root {
+    --offsety: 0%; 
+    --offsetx: 0%; 
+}
+
+@keyframes scrolling {
+  from{
+      background-position: 0 0;
+  }
+  to{
+      background-position: var(--offsetx) var(--offsety);
+  }
+}
