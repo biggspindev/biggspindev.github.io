@@ -53,7 +53,7 @@ body{
 
 :root {
     --offsety: 0%; 
-    --offsetx: 0%; 
+    --offsetx: 100%; 
 }
 
 @keyframes scrolling {
