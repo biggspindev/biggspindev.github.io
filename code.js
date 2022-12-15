@@ -1,8 +1,22 @@
+let contents = [
+    ["bsabt", "About"],
+    ["bsdev", "BiggSpin<b>\u2009Dev</b>"],
+    ["bsmc", "BiggSpin<b>\u2009MC</b>"],
+    ["bsbot", "<b>Muziek\u2009</b>Snel"],
+    ["bsparent", "<b>Bouw\u2009</b>Snel"],
+]
+
 function main() {
-    var slider = document.getElementById("slider")
-    var flip = [1,-1]
+    let slider = document.getElementById("slider")
+    let flip = [1,-1]
     slider.style.setProperty('--offsetx', getRandomInt(25, 110)*flip[Math.floor(Math.random()+0.5)] +'%');
     slider.style.setProperty('--offsety', getRandomInt(25, 110)*flip[Math.floor(Math.random()+0.5)] +'%');
+    
+    let insert = ""
+    for (let x in contents) {
+        insert += `<p class="item" onclick="setTimeout(function(){ location.href = '${contents[x][0]}' }, 200);">${contents[x][1]}</p>`
+    }
+    document.getElementById("holder").innerHTML = insert
 }
 
 function getRandomInt(min, max) {
