@@ -12,5 +12,4 @@ function main() {
         insert += `<p class="item" onclick="setTimeout(function(){ location.href = '${contents[x][0]}' }, 200);">${contents[x][1]}</p>`
     }
     document.getElementById("holder").innerHTML = insert
-    console.log("snuss")
 }

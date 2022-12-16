@@ -5,7 +5,6 @@ function time() {
     slider.style.setProperty('--offsety', getRandomInt(25, 110)*flip[Math.floor(Math.random()+0.5)] +'%');
 
     setInterval(refreshTime, 250)
-    console.log("sniss")
 }
 
 function refreshTime() {
