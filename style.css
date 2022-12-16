@@ -4,6 +4,8 @@ body{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transition: 1s;
+    justify-content: center;
+    display: flex;
 }
   
 @keyframes fadeInAnimation {
@@ -29,15 +31,43 @@ body{
 
 .content {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+
     opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 2;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    opacity: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.itemnoclick {
+    margin: 5px;
+    text-align: center;
+    /* pointer-events: none; */
+    user-select: none;
+    opacity: 0.8;
+    transition: 0.3s;
+    height: auto; 
+    width: auto; 
+    max-height: 400px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.itemnoclick:hover {
+    opacity: 1;
 }
 
 .item {

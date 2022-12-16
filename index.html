@@ -6,6 +6,7 @@
         <meta name="description" content="BiggSpin main page.">
         <link rel="stylesheet" href="style.css">
         <script src="code.js"></script>
+        <script src="time.js"></script>
 
         <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -15,8 +16,11 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#000000">
     </head>
-    <body onload="main()">
+    <body onload="main(); time()">
         <div class="scroller" id="slider"></div>
         <div class="content" id="holder"></div>
+        <div class="bottom">
+            <p class="itemnoclick" id="bottomstats"></p>
+        </div>
     </body>
 </html>

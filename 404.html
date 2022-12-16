@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="BiggSpin main page.">
         <link rel="stylesheet" href="style.css">
+        <script src="time.js"></script>
 
         <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -14,8 +15,14 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#000000">
     </head>
-    <body>
+    <body onload="time()">
         <div class="scroller" id="slider"></div>
-        <div class="content" id="holder"><p class="item" onclick="setTimeout(function(){ location.href = 'https:\/\/www.022150.xyz'; }, 200);"><b>PAGE NOT FOUND</b><br><u>return to main page</u></p></div>
+        <div class="content" id="holder">
+            <p class="itemnoclick"><b>404: PAGE NOT FOUND</b></p>
+            <p class="item" onclick="setTimeout(function(){ location.href = 'https:\/\/www.022150.xyz'; }, 200);"><u>return to main page</u></p>
+        </div>
+        <div class="bottom">
+            <p class="itemnoclick" id="bottomstats"></p>
+        </div>
     </body>
 </html>
