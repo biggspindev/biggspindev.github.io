@@ -1,4 +1,9 @@
 function time() {
+    let slider = document.getElementById("slider")
+    let flip = [1,-1]
+    slider.style.setProperty('--offsetx', getRandomInt(25, 110)*flip[Math.floor(Math.random()+0.5)] +'%');
+    slider.style.setProperty('--offsety', getRandomInt(25, 110)*flip[Math.floor(Math.random()+0.5)] +'%');
+
     setInterval(refreshTime, 250)
     console.log("sniss")
 }
@@ -37,4 +42,10 @@ function refreshTime() {
         }
     }
     document.getElementById("bottomstats").innerHTML = `${d_year} year${((d_year == 1)&&(","))||("s,")} ${d_mnth} month${((d_mnth == 1)&&(","))||("s,")} ${d_day} day${((d_day == 1)&&(","))||("s,")} ${d_hr} hour${((d_hr == 1)&&(","))||("s,")} ${d_min} minute${((d_min == 1)&&(" "))||("s ")}and ${d_sec} second${((d_sec == 1)&&(" "))||("s ")}<br><i>Copyright© 2020-${date.getFullYear()} BouwSnel</i>`
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }
