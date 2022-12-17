@@ -19,7 +19,7 @@ body{
 
 .scroller {
     background: url("bg.png") repeat;
-    animation: scrolling 45s linear infinite;
+    animation: scrolling 45s linear infinite, shineIn ease 0.8s;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -27,6 +27,19 @@ body{
     left: 0px;
     opacity: 0.10;
     z-index: -1;
+
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: var(--mouseox) var(--mouseoy);
+}
+
+@keyframes shineIn {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.1;
+     }
 }
 
 .content {
@@ -143,6 +156,10 @@ body{
 :root {
     --offsety: 0%; 
     --offsetx: 100%; 
+    --mousex: 0;
+    --mousey: 0;
+    --mouseox: 0;
+    --mouseoy: 0;
 }
 
 @keyframes scrolling {

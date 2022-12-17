@@ -5,6 +5,24 @@ function time() {
     slider.style.setProperty('--offsety', getRandomInt(25, 110)*flip[Math.floor(Math.random()+0.5)] +'%');
 
     setInterval(refreshTime, 250)
+
+    //setup mouse vars
+    var mouseX = 0, mouseY = 0;
+    var xp = 0, yp = 0;
+        
+    addEventListener('mousemove', (e) => {
+        mouseX = e.pageX - 30;
+        mouseY = e.pageY - 30; 
+    });
+        
+    setInterval(function(){
+        xp += ((mouseX - xp)/6);
+        yp += ((mouseY - yp)/6);
+        document.documentElement.style.setProperty('--mousex', xp+'px');
+        document.documentElement.style.setProperty('--mousey', yp+'px');
+        document.documentElement.style.setProperty('--mouseox', (xp - Math.floor(window.innerWidth/2)) +'px');
+        document.documentElement.style.setProperty('--mouseoy', (yp - Math.floor(window.innerHeight/2)) +'px');
+    }, 20);
 }
 
 function refreshTime() {
