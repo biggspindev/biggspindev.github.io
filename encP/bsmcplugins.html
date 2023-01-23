@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BS - Encrypted Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <script src="../time.js"></script>
+        <script src="../enc.js"></script>
+        <script src="../scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#000000">
+    </head>
+    <body onload="time(); decrypt(); scrollInit();">
+        <div class="scroller" id="slider"></div>
+        <div class="content" id="holder">
+            <p class="itemnoclick" id="pageheader">Viewing encrypted page: <b>%pagename%</b><br>Using key: <b>%key%</b></p>
+            <div class="smoothbox" id="contents">
+                <p class="itemnoclick">3d1c14531d1a160753121f1f1653031f06141a1d0052535b5c07031253161d091c531e1c1607531d1c145314160007161e1753041c0117161d5a</p>
+                <p class="itemnoclick big">1219231201181c0601</p>
+                <p class="itemnoclick">231201181c060153111c05161d53000312041d53051c1c015314121e160100101c0116535b181c0007531a011c1d5303160153031c141a1d145a5d</p>
+                <p class="itemnoclick big">37121e1214163a1d171a1012071c01</p>
+                <p class="itemnoclick">341616150753121d0712121f531b1201071916005317121e12141653121f00531416531a161e121d1753001f1212140753041616015d</p>
+                <p class="itemnoclick big">36031a102116031f121d07</p>
+                <p class="itemnoclick">36161d531b1c16531e160753001a1f1853071c06101b530116031f121d075310011c030053171a165314165316011e1616531b1201051600075d</p>
+                <p class="itemnoclick big">34201a07</p>
+                <p class="itemnoclick">291a070716531c03530007121a010053161d53001f1211005d</p>
+                <p class="itemnoclick big">3a1d0716011210071a1c1d251a0006121f1a091601</p>
+                <p class="itemnoclick">341616150753121d1a1e12071a160053121f005314165310011215075f53101b160007531c03161d075f5307011217165f535d5d5d</p>
+                <p class="itemnoclick big">391c1100</p>
+                <p class="itemnoclick">391c110053051c1c015314121e160100101c01165d</p>
+                <p class="itemnoclick big">3812311c1c1e</p>
+                <p class="itemnoclick">271d0753141c1c1a0753111f1c1818161d531a1d531b160753011c1d17535b1d1a53091c531b1201175a5d</p>
+                <p class="itemnoclick big">3f1a071636101c</p>
+                <p class="itemnoclick">291c01140753051c1c015314121e160100101c01165d</p>
+                <p class="itemnoclick big">3e1c1d160a35011c1e3e1c1100</p>
+                <p class="itemnoclick">291c011407531601051c1c015317120753031f120a160100531b061d5314121e160100101c01165317011c0303161d53121f0053091653171c1c17531412121d5d</p>
+                <p class="itemnoclick big">3c15151f1a1d1634011c04071b</p>
+                <p class="itemnoclick">30011c03005314011c161a161d531c1c1853121f005314165304161453091a19075d</p>
+                <p class="itemnoclick big">21121d171c1e3c1010060101161d101600</p>
+                <p class="itemnoclick">21121d171c1e53101b121f1f161d14160053051c1c015314121e160100101c0116535b405853031f120a160100531c1e5307165314161101160601161d5a5d</p>
+                <p class="itemnoclick big">201b1c0318161603160100</p>
+                <p class="itemnoclick">251a1f1f121416010053051c1c01531a1d53171653001b1c0300531a1d53000312041d5d</p>
+                <p class="itemnoclick big">271612180027041612180011160712</p>
+                <p class="itemnoclick">381f160601161d531c0353111c01171916005f531e1a1d1a53111f1c10180053061a075304121d1716011a1d1453070112171601005f531607105d5d535b4e5305121d1a1f1f120704161218005a</p>
+                <p class="itemnoclick big">261f071a1e120716321a0117011c030031362732</p>
+                <p class="itemnoclick">21121d171c1e53121a01171c030053051c1c015314121e160100101c011653161d53101c1c1f16531f1c1c07535b405853031f120a160100531c1e5307165314161101160601161d5a5d</p>
+                <p class="itemnoclick big">051a010706121f0116121f070a</p>
+                <p class="itemnoclick">231f1c0753000a000716161e531a1d53000312041d53051c1c0153171653001b1c03005d</p>
+                <p class="itemnoclick big">1612000a00061e1c</p>
+                <p class="itemnoclick">20061e1c530003161f161d531a1d53000312041d535b161f181212015303011c111601161d5305121d5316161d53031f1207151c011e530716531e160303161d5a5d</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="itemnoclick" id="bottomstats"></p>
+        </div>
+    </body>
+</html>

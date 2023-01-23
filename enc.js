@@ -6,11 +6,21 @@ function decrypt() {
     
     document.getElementById('pageheader').innerHTML = `Viewing encrypted page: <b>${page}</b><br>Using key: <b>${key}</b>`
 
+    if (key != "null") {
+        children = document.getElementById("contents").children
+        for (let i=0; i < children.length; i++) {
+            let child = children[i]
+            var encrypted = child.innerHTML
+            child.innerHTML = AESdecrypt(key, encrypted);
+        }
+    }
+}
+
+function encryptPage(key) { // to use when making page
     children = document.getElementById("contents").children
     for (let i=0; i < children.length; i++) {
         let child = children[i]
-        var encrypted = child.innerHTML
-        child.innerHTML = AESdecrypt(key, encrypted);
+        child.innerHTML = AEScrypt(key, child.innerHTML)
     }
 }
 
