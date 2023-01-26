@@ -1,7 +1,8 @@
 function decrypt() {
     let queryString = window.location.search;
     let urlParams = new URLSearchParams(queryString);
-    let key = String(urlParams.get('key')) 
+    let key = String(urlParams.get('key'))
+    key = key.replace(/[<>/ "=()%\\]/g, "") //filter out some stuff to prevent code injection
     let page = String(location.href.split("/").slice(-1)).split("?")[0]
     
     document.getElementById('pageheader').innerHTML = `Viewing encrypted page: <b>${page}</b><br>Using key: <b>${key}</b>`
