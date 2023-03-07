@@ -58,7 +58,7 @@ function refreshTime() {
             d_sec += 60
         }
     }
-    // the " " keeps numbers and their significance together
+    // the " " keeps numbers and their significance together for mobile devices
     document.getElementById("bottomstats").innerHTML = `${d_year} year${((d_year == 1)&&(","))||("s,")} ${d_mnth} month${((d_mnth == 1)&&(","))||("s,")} ${d_day} day${((d_day == 1)&&(","))||("s,")} ${d_hr} hour${((d_hr == 1)&&(","))||("s,")} ${d_min} minute${((d_min == 1)&&(" "))||("s ")}and ${d_sec} second${((d_sec == 1)&&(" "))||("s ")}<br><i>Copyright\u00A9 2020-${date.getFullYear()} BouwSnel</i>`
 }
 

@@ -4,6 +4,7 @@ let contents = [
     ["bsmc", "BiggSpin<b>\u2009MC</b>"],
     ["bsbot", "<b>Muziek\u2009</b>Snel"],
     ["bsparent", "<b>Bouw\u2009</b>Snel"],
+    ["encbrowse", "Encrypted <b>\u2009Pages</b>"],
 ]
 
 function main() {

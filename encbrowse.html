@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BS - Encrypted Pages</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="BiggSpin main page.">
+        <link rel="stylesheet" href="style.css">
+        <script src="time.js"></script>
+        <script src="encList.js"></script>
+
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#000000">
+    </head>
+    <body onload="main(); time()">
+        <div class="scroller" id="slider"></div>
+        <div class="content" id="holder">
+            <p class="item" onclick="setTimeout(function(){ location.href = 'https:\/\/www.022150.xyz'; }, 200);"><u>return to main page</u></p>
+            <div class="smoothbox" id="holderbox">
+                <p class="itemnoclick big">Encrypted<b> Pages</b></p>
+                <p class="itemnoclick">All pages require a key to be viewed.<br>It can be parsed with <b class="sellectme">?key=xyz</b> in the url.</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="itemnoclick" id="bottomstats"></p>
+        </div>
+    </body>
+</html>

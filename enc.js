@@ -2,6 +2,9 @@ function decrypt() {
     let queryString = window.location.search;
     let urlParams = new URLSearchParams(queryString);
     let key = String(urlParams.get('key'))
+    while (key == "null" || key == "" || key == null) {
+        key = prompt("Enter decryption key:");
+    }
     key = key.replace(/[<>/ "=()%\\]/g, "") //filter out some stuff to prevent code injection
     let page = String(location.href.split("/").slice(-1)).split("?")[0]
     
