@@ -6,6 +6,7 @@ function decrypt() {
         key = prompt("Enter decryption key:");
     }
     key = key.replace(/[<>/ "=()%\\]/g, "") //filter out some stuff to prevent code injection
+    window.history.replaceState(null, null, '?key='+key); //append url if not yet
     let page = String(location.href.split("/").slice(-1)).split("?")[0]
     
     document.getElementById('pageheader').innerHTML = `Viewing encrypted page: <b>${page}</b><br>Using key: <b>${key}</b>`
