@@ -7,8 +7,34 @@ body{
     justify-content: center;
     display: flex;
     overflow: hidden;
+    user-select: none;
 }
   
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #3d3d3d;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #3d3d3d;
+}
+
+::-webkit-resizer {
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #3d3d3d;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -126,6 +152,7 @@ body{
     animation: scaleInAnimation ease 0.8s;
     padding: 10px;
     transition: 0.3s;
+    margin: 10px;
 }
 
 .smoothbox:hover {
@@ -141,6 +168,55 @@ body{
 
 .sellectme {
     user-select: text;
+}
+
+textarea {
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #3d3d3d;
+    margin: 5px;
+    text-align: left;
+    opacity: 0.8;
+    height: auto; 
+    width: auto; 
+    max-height: 400px;
+    max-width: 1000px;
+    min-height: 250px;
+    min-width: 450px;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: scaleInAnimation ease 0.8s;
+}
+
+input {
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #3d3d3d;
+    margin: 5px;
+    text-align: left;
+    opacity: 0.8;
+    height: auto; 
+    width: auto; 
+    color: #ffffff;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: scaleInAnimation ease 0.8s;
+}
+
+button {
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #3d3d3d;
+    margin: 5px;
+    text-align: left;
+    opacity: 0.8;
+    height: auto; 
+    width: auto; 
+    color: #ffffff;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: scaleInAnimation ease 0.8s;
 }
 
 @keyframes scaleInAnimation {
