@@ -1,13 +1,16 @@
-//page is large if content > 905 window height, varry top of content from 50% to -50%, disable transform
-
 progress = 0
 dprogress = 0
+scrolling = false
+
+addEventListener("resize", (event) => {scrollInit();});
 
 function scrollInit() {
+    if (scrolling) {return;}
     screensize = window.innerHeight
     content = document.getElementById("holder")
     contentsize = content.offsetHeight
     if (contentsize/screensize > 0.9) {
+        scrolling = true
         contentsize = content.offsetHeight - Math.round(0.5 * screensize)
         content.style.transform = "translate(0, 0)"
 
@@ -33,14 +36,17 @@ function scrollInit() {
             if (progress > contentsize) {progress = contentsize}
         }
 
-        setInterval(function(){
+        function scrollEvent() {
             screensize = window.innerHeight
             contentsize = content.offsetHeight - Math.round(0.5 * screensize)
 
-            dprogress += ((progress - dprogress)/6);
+            dprogress += ((progress - dprogress)/10);
             dprogress = Math.round(dprogress * 100) / 100
             pxProgress = Math.round(-dprogress) + Math.round(0.3 * screensize)
             content.style.top = pxProgress + "px"
-        }, 20);
+            requestAnimationFrame(scrollEvent);
+        }
+
+        scrollEvent()
     }   
 }

@@ -1,4 +1,4 @@
-let contents = ["bsmcplugins","sample",]
+let contents = ["bsmcplugins","sample","preftest"]
 
 function main() {
     let insert = ""

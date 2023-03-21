@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="/style.css">
         <script src="/time.js"></script>
         <script src="/enc.js"></script>
+        <script src="/scroll.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 
         <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
@@ -16,7 +17,7 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#000000">
     </head>
-    <body onload="time(); decrypt()">
+    <body onload="time(); decrypt(); scrollInit();">
         <div class="scroller" id="slider"></div>
         <div class="content" id="holder">
             <p class="item" onclick="setTimeout(function(){ location.href = 'https:\/\/www.022150.xyz\/encbrowse'; }, 200);"><u>return to page list</u></p>
