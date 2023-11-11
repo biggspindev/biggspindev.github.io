@@ -1,8 +1,8 @@
 let contents = [
     ["bsabt", "About"],
+    ["encbrowse", "<b>Encrypted\u2009</b> Pages"],
     ["bsdev", "BiggSpin<b>\u2009Dev</b>"],
     ["bsparent", "<b>Bouw\u2009</b>Snel"],
-    ["encbrowse", "<b>Encrypted\u2009</b> Pages"],
     ["bspanel", "<b>Pterodactyl\u2009</b>Panel"],
     ["bsfs", "<b>File\u2009</b>stash"],
 ]

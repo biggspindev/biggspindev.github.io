@@ -15,14 +15,14 @@ function time() {
         mouseY = e.pageY - 30; 
     });
         
-    setInterval(function(){
+    /*setInterval(function(){
         xp += ((mouseX - xp)/6);
         yp += ((mouseY - yp)/6);
         document.documentElement.style.setProperty('--mousex', xp+'px');
         document.documentElement.style.setProperty('--mousey', yp+'px');
         document.documentElement.style.setProperty('--mouseox', (xp - Math.floor(window.innerWidth/2)) +'px');
         document.documentElement.style.setProperty('--mouseoy', (yp - Math.floor(window.innerHeight/2)) +'px');
-    }, 20);
+    }, 20);*/ //no longer needed since circle is gone now
 }
 
 function refreshTime() {
