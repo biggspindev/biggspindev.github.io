@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>BS - BiggSpinMC</title>
+        <title>BS - Redirect</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="BiggSpin main page.">
         <link rel="stylesheet" href="style.css">
@@ -15,16 +15,9 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#000000">
     </head>
-    <body onload="time()">
+    <body onload="time(); setTimeout(function(){ location.href = 'https:\/\/panel.022150.xyz'; }, 200);">
         <div class="scroller" id="slider"></div>
-        <div class="content" id="holder">
-            <p class="item" onclick="setTimeout(function(){ location.href = 'https:\/\/www.022150.xyz'; }, 200);"><u>return to main page</u></p>
-            <div class="smoothbox">
-                <p class="itemnoclick big">BiggSpin<b>MC</b></p>
-                <p class="itemnoclick">Minecraft server network hosted at<br><b class="sellectme">mc.022150.xyz</b><br>Dm <b class="sellectme">@Artzert2215#4336</b> to reserve a node.</p>
-                <p class="item" onclick="setTimeout(function(){ location.href = 'https:\/\/discord.gg/cYHNNCPDda'; }, 200);"><u>server link for dm</u></p>
-            </div>
-        </div>
+        <div class="content" id="holder"></div>
         <div class="bottom">
             <p class="itemnoclick" id="bottomstats"></p>
         </div>

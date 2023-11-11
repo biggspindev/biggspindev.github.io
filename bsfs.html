@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>BS - MuziekSnel</title>
+        <title>BS - Redirect</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="BiggSpin main page.">
         <link rel="stylesheet" href="style.css">
@@ -15,16 +15,9 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#000000">
     </head>
-    <body onload="time()">
+    <body onload="time(); setTimeout(function(){ location.href = 'http:\/\/193.123.35.210:8334/'; }, 200);">
         <div class="scroller" id="slider"></div>
-        <div class="content" id="holder">
-            <p class="item" onclick="setTimeout(function(){ location.href = 'https:\/\/www.022150.xyz'; }, 200);"><u>return to main page</u></p>
-            <div class="smoothbox">
-                <p class="itemnoclick big"><b>Muziek</b>Snel</p>
-                <p class="itemnoclick">Private discord music bot.<br>Dm <b class="sellectme">@Artzert2215#4336</b> to invite bot.</p>
-                <p class="item" onclick="setTimeout(function(){ location.href = 'https:\/\/discord.gg/cYHNNCPDda'; }, 200);"><u>server link for dm</u></p>
-            </div>
-        </div>
+        <div class="content" id="holder"></div>
         <div class="bottom">
             <p class="itemnoclick" id="bottomstats"></p>
         </div>

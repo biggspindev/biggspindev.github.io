@@ -1,10 +1,10 @@
 let contents = [
     ["bsabt", "About"],
     ["bsdev", "BiggSpin<b>\u2009Dev</b>"],
-    ["bsmc", "BiggSpin<b>\u2009MC</b>"],
-    ["bsbot", "<b>Muziek\u2009</b>Snel"],
     ["bsparent", "<b>Bouw\u2009</b>Snel"],
-    ["encbrowse", "Encrypted <b>\u2009Pages</b>"],
+    ["encbrowse", "<b>Encrypted\u2009</b> Pages"],
+    ["bspanel", "<b>Pterodactyl\u2009</b>Panel"],
+    ["bsfs", "<b>File\u2009</b>stash"],
 ]
 
 function main() {
