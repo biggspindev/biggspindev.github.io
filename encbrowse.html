@@ -27,7 +27,7 @@
                 <p class="itemnoclick">All pages require a key to be viewed.<br>It can be parsed with <b class="sellectme">?key=xyz</b> in the url.</p>
             </div>
             <div class="smoothbox">
-                <p class="itemnoclick">Enter text and a key below.<br>When finished press encrypt to get the html for the encrypted page!</p>
+                <p class="itemnoclick">Enter text and a secret / key below.</p>
                 <div> 
                     <input type="text" onchange="translateBox()" id="keyEnc" placeholder="Enter Key">
                     <button type="button" onclick="document.getElementById('keyEnc').value = Math.random().toString(36).substr(2);translateBox();">Randomize</button>
